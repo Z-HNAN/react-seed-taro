@@ -40,6 +40,7 @@
     "moment": "^2.24.0",
     "nerv-devtools": "^1.4.0",
     "nervjs": "^1.4.0",
+    "prop-types": "^15.7.2",
     "redux": "^4.0.0",
     "redux-action-boilerplate": "^1.1.0-alpha.2",
     "redux-logger": "^3.0.6",
