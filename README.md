@@ -5,7 +5,7 @@
 ## Developing
 
 ``` bash
-$ npm
+$ npm i
 $ npm start
 ```
 
