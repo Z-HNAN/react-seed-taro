@@ -3,6 +3,7 @@ import { Async, Sync } from 'redux-action-boilerplate'
 export const async = new Async({
   prefix: '',
   actions: [
+    'asyncAdd'
   ]
 })
 

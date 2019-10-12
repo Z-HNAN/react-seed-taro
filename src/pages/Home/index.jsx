@@ -1,6 +1,11 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Button, Text } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
+import { async, sync } from '@/src/actions'
+
+const {
+  asyncAdd
+} = async
 
 import './index.less'
 
@@ -11,6 +16,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    onAsyncAdd: () => {
+      dispatch(asyncAdd({ number: 1 }))
+    }
   }
 }
 
@@ -34,6 +42,7 @@ class Home extends Component {
   render () {
     return (
       <View className='index'>
+        <Button onClick={this.props.onAsyncAdd}> saga-demo click </Button>
         <View>Home</View>
       </View>
     )
