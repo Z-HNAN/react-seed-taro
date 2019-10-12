@@ -1,6 +1,12 @@
 import { combineReducers } from 'redux'
-import index from '../pages/index/reducer'
+
+import postsReducer from '../pages/Posts/reducer'
+import scheduleReducer from '../pages/Schedule/reducer'
+import homeReducer from '../pages/Home/reducer'
+
 
 export default combineReducers({
-  index
+  posts: postsReducer,
+  schedule: scheduleReducer,
+  home: homeReducer,
 })

@@ -1,3 +1,6 @@
+/* eslint-disable-next-line import/no-commonjs */
+const path = require('path')
+
 const config = {
   projectName: 'taro-redux-saga',
   date: '2019-8-14',
@@ -25,6 +28,9 @@ const config = {
     }
   },
   defineConstants: {
+  },
+  alias: {
+    '@/src': path.resolve(__dirname, '..', 'src'),
   },
   copy: {
     patterns: [
